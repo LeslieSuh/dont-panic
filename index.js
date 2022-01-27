@@ -9,7 +9,9 @@ const navbar = document.querySelector('.navmenu_drop_gam'),
   items2 = document.querySelectorAll('.item2'),
   content = document.querySelector('.content_gam'),
   hamberger = document.querySelectorAll('.menu_icon_gam'),
-  menus = document.querySelectorAll('.navbar_menu_gam');
+  menus = document.querySelectorAll('.navbar_menu_gam'),
+  logos = document.querySelectorAll('.logo');
+
 window.onscroll = function () {
   scrollFunction();
 };
@@ -54,7 +56,14 @@ for (const item2 of items2) {
     });
   });
 }
-// 모바일 크기 맞췩
+let pageOffset = window.pageYOffset; // 현재
+logos.forEach((logo) => {
+  logo.addEventListener('click', () => {
+    if (window.pageYOffset > 0) {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  });
+});
 
 hamberger.forEach((btn) => {
   btn.addEventListener('click', () => {
@@ -62,4 +71,7 @@ hamberger.forEach((btn) => {
       menu.classList.toggle('menuDrop');
     });
   });
+});
+window.addEventListener('scroll', () => {
+  console.log(pageOffset);
 });
