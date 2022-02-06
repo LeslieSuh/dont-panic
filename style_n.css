@@ -6,6 +6,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  max-width: 100%;
 }
 
 /* body {
@@ -20,14 +21,14 @@
 
 .blog-post {
   width: 100%;
-  max-width: 99rem;
+  max-width: 98rem;
   padding: 0.2rem;
   background-color: #dbf4ff21;
   box-shadow: 0 1.4rem 8rem rgba(0, 0, 0, 0.2);
   display: flex;
   align-items: center;
   border-radius: 1rem;
-  margin: 15px;
+  margin: 10px;
 }
 
 .blog-post_img {
@@ -36,7 +37,6 @@
   height: 30rem;
   transform: translateX(-8rem);
   position: relative;
-/*  margin-right: -20px;*/
 }
 
 .blog-post_img img {
@@ -58,19 +58,16 @@
   border-radius: 0.8rem;
 }
 
-.blog-post_info {
-    margin-left: -30px;
-}
-
 .blog-post_title {
   font-size: 3rem;
-  margin: 1.5rem 0;
+  margin: 1.5rem 2rem;
   text-transform: uppercase;
   color: #40252a;
 }
 
 .blog-post_text {
-  margin: 1.5rem 8rem 2rem 0;
+  margin-bottom: 3rem;
+  margin: 1.5rem 0 2rem;
   font-size: 1.4rem;
   color: #000000b3;
 }
@@ -146,18 +143,65 @@
   .blog-post {
     padding: 2.5rem;
     flex-direction: column;
-      text-align: center;
   }
-    .blog-post_text{
-        text-align: center;
-        margin: 10px 15px 20px 15px;
-    }
   .blog-post_img {
-    min-width: 70%;
-    max-width: 100%;
+    min-width: 100%;
+
     transform: translate(0, -1rem);
   }
   .container-yummy {
     margin-top: 20%;
+  }
+  .navmenu_drop_gam,
+  .navmenu_fix_gam {
+    flex-direction: column;
+  }
+  /* .navmenu_drop_gam {
+    position: fixed;
+  } */
+  .navbar_menu_gam {
+    display: none;
+    flex-direction: column;
+    margin-left: 0;
+  }
+  .navbar_menu_gam_fix {
+    display: none;
+    flex-direction: column;
+    margin-left: 0;
+  }
+  .drop_menu {
+    display: flex;
+  }
+  .menu_item_gam {
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+
+  .menu_item_gam_fix {
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+
+  .menuDrop {
+    display: flex;
+  }
+  .menu_icon_gam {
+    opacity: 1;
+    position: absolute;
+    right: 3%;
+    font-size: 22px;
+    margin: 2%;
+    cursor: pointer;
+  }
+
+  .menu_icon_gam_fix {
+    opacity: 1;
+    position: absolute;
+    right: 3%;
+    font-size: 22px;
+    margin: 2%;
+    cursor: pointer;
   }
 }
