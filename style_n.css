@@ -6,7 +6,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  max-width: 100%;
 }
 
 /* body {
@@ -28,7 +27,7 @@
   display: flex;
   align-items: center;
   border-radius: 1rem;
-  margin: 10px;
+  margin: 15px;
 }
 
 .blog-post_img {
@@ -58,16 +57,19 @@
   border-radius: 0.8rem;
 }
 
+.blog-post_info {
+  margin-left: -30px;
+}
+
 .blog-post_title {
   font-size: 3rem;
-  margin: 1.5rem 2rem;
+  margin: 1.5rem 0;
   text-transform: uppercase;
   color: #40252a;
 }
 
 .blog-post_text {
-  margin-bottom: 3rem;
-  margin: 1.5rem 0 2rem;
+  margin: 1.5rem 8rem 2rem 0;
   font-size: 1.4rem;
   color: #000000b3;
 }
